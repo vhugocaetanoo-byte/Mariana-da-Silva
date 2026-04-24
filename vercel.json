@@ -1,8 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/((?!imagens/|.*\\.(png|jpg|jpeg|webp|svg|gif|ico|css|js|json)).*)",
-      "destination": "/index.html"
-    }
-  ]
+  "cleanUrls": true
 }
