@@ -1,14 +1,7 @@
-# Dependencies
 node_modules/
-
-# AIDesigner internal runs (keep only the deliverable)
-.aidesigner/*
-!.aidesigner/mcp-latest.html
-
-# Claude Code internals
 .claude/
 .agents/
 .mcp.json
-
-# Large binary not needed in repo
 *.pdf
+.aidesigner/*
+!.aidesigner/mcp-latest.html
