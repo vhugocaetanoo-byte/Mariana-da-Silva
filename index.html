@@ -232,10 +232,6 @@
 
 <body class="overflow-x-hidden">
 
-  <!-- WhatsApp Float Button -->
-  <a href="https://wa.me/5548991208533?text=Ol%C3%A1!%20Vim%20do%20site%20do%20Miss%C3%A3o%20Aprova%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 lg:bottom-6 lg:right-6 z-50 w-14 h-14 lg:w-16 lg:h-16 rounded-full shadow-2xl hover:shadow-[0_0_30px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-110 active:scale-95 flex items-center justify-center bg-[#25D366]">
-    <i class="ph ph-whatsapp-logo text-3xl lg:text-4xl text-white"></i>
-  </a>
 
   <div id="root">
 
@@ -602,19 +598,6 @@
             </div>
             <img loading="lazy" src="./imagens/07.webp" alt="Questões de Classes de Palavras — formato oficial dos Colégios Militares" class="pdf-viewer-img">
 
-            <!-- 9 — locked last page -->
-            <div class="text-center mb-3">
-              <span class="bg-[#2D4A2B] text-xs font-bold text-white px-4 py-1.5 rounded-full shadow border border-[#C9A961]/40 inline-block">Amostra ilustrativa • p.1 de 1.149</span>
-            </div>
-            <div class="relative" style="margin-bottom:0;">
-              <img loading="lazy" src="./public/placeholders/pdf-preview-page-9.svg" alt="Amostra de questão oficial — Missão Aprovação PDF completo" class="pdf-viewer-img" style="margin-bottom:0;">
-              <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent flex items-end justify-center pb-6">
-                <button onclick="document.getElementById('bonus').scrollIntoView({behavior:'smooth'})" class="bg-[#C9A961] text-white px-6 py-2 rounded-full font-bold text-sm shadow-xl flex items-center gap-2 hover:bg-[#B89751] transition-colors">
-                  <i class="ph-fill ph-lock-key"></i> Ver Material Completo
-                </button>
-              </div>
-            </div>
-
             <!-- Scroll hint (hidden after first scroll via JS) -->
             <div class="pdf-scroll-hint" id="pdf-scroll-hint">
               <span>role para ver mais ↓</span>
@@ -622,7 +605,11 @@
 
           </div><!-- /pdf-viewer -->
 
-          <p class="text-[10px] text-gray-500 mt-3 text-center">Esta é apenas uma amostra. O material completo contém 1.149 questões reais dos 8 Colégios Militares, organizadas por assunto e com gabarito oficial.</p>
+          <p id="previa-caption" class="text-[10px] text-gray-500 mt-3 text-center">Esta é apenas uma amostra. O material completo contém 1.149 questões reais dos 8 Colégios Militares, organizadas por assunto e com gabarito oficial.</p>
+          <style>
+            #previa-caption { margin-bottom: 40px; }
+            @media (min-width: 768px) { #previa-caption { margin-bottom: 56px; } }
+          </style>
 
         </div>
 
@@ -1311,21 +1298,24 @@
           @media (min-width: 481px) { .pc-bullets li { font-size: 14px; } }
           .pc-bullets li span { color: #C9A961; font-weight: 700; flex-shrink: 0; }
           .pc-divider { border: none; border-top: 1px solid rgba(201,169,97,0.2); margin: 0; }
-          .pc-price-main {
+          .pc-price-avista {
             color: #C9A961;
-            font-size: 32px;
+            font-size: 40px;
             font-weight: 800;
             line-height: 1.1;
-            margin: 0 0 2px;
+            margin: 0 0 4px;
             text-align: center;
           }
-          @media (min-width: 481px) { .pc-price-main { font-size: 44px; } }
-          .pc-price-avista {
+          @media (min-width: 481px) { .pc-price-avista { font-size: 52px; } }
+          .pc-price-main {
             color: #F5F1E8;
-            font-size: 13px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.4;
             margin: 0;
             text-align: center;
           }
+          @media (min-width: 481px) { .pc-price-main { font-size: 16px; } }
           .pc-cta {
             width: 100%;
             height: 48px;
@@ -1421,8 +1411,8 @@
 
           <!-- 4. Price -->
           <div style="margin-bottom:12px;">
-            <p class="pc-price-main">12x de R$2,74</p>
-            <p class="pc-price-avista">ou R$32,90 à vista</p>
+            <p class="pc-price-avista">R$32,90 à vista</p>
+            <p class="pc-price-main">ou 12x de R$2,74</p>
           </div>
 
           <!-- 5. CTA -->
