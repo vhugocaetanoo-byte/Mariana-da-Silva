@@ -1674,8 +1674,8 @@
 
       /* ── Phase B: hero ── */
       .min-h-\[90vh\] { min-height: 0 !important; }
-      /* hero image constrained on small screens */
-      .image-ring-pulse img { max-height: 260px; width: auto; }
+      /* hero image: full width, no height cap */
+      .image-ring-pulse img { max-height: none !important; width: 100% !important; height: auto !important; }
 
       /* ── Phase B: Para Quem É cards ── */
       .bg-theme-bgCardDark.rounded-2xl { padding: 1rem !important; }

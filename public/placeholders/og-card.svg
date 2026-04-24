@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1A2E1B"/><stop offset="100%" stop-color="#2D4A2B"/></linearGradient></defs>
-  <rect width="100%" height="100%" fill="url(#bg)"/>
-  <rect x="2%" y="2%" width="96%" height="96%" fill="none" stroke="#C9A961" stroke-width="2" stroke-dasharray="8 6" rx="12"/>
-  <text x="50%" y="48%" text-anchor="middle" dominant-baseline="middle" fill="#F5F1E8" font-family="system-ui,-apple-system,sans-serif" font-size="36" font-weight="600">Missão Aprovação — 1.149 Questões Reais</text>
-  <text x="50%" y="62%" text-anchor="middle" dominant-baseline="middle" fill="#C9A961" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="400">placeholder</text>
-</svg>

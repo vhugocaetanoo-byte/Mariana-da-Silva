@@ -1,7 +1,0 @@
-node_modules/
-.claude/
-.agents/
-.mcp.json
-*.pdf
-.aidesigner/*
-!.aidesigner/mcp-latest.html
